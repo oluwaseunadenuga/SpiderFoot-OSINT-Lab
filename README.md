@@ -23,7 +23,7 @@
 - [Evidence & Screenshots](#-evidence--screenshots)
 - [Recommendations](#-recommendations)
 - [Skills Demonstrated](#-skills-demonstrated)
-- [Related Projects](#-related-projects)
+
 
 ---
 
@@ -290,4 +290,4 @@ The graph visualization displayed node relationships between:
 
 ---
 
-*Portfolio project by [Your Name] | Cybersecurity Analyst | [LinkedIn](#) | [GitHub](#)*
+*Portfolio project by Oluwaseun Adenuga| Cybersecurity Analyst | https://www.linkedin.com/in/oluwaseunadenuga/ | *
