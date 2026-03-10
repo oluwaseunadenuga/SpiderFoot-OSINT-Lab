@@ -12,7 +12,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Objective](#-objective)
 - [Lab Environment](#-lab-environment)
@@ -27,7 +27,7 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 
 The goal of this lab is to simulate the **OSINT reconnaissance phase** of an authorized penetration test or threat intelligence assessment.
 
@@ -40,13 +40,13 @@ Using SpiderFoot's automated scanning engine, I collected and correlated publicl
 - GitHub/Pastebin data leaks
 - Technology stack fingerprinting
 
-> ⚠️ **All scans were performed in a controlled, authorized lab environment. No real organizations were targeted.**
+> **All scans were performed in a controlled, authorized lab environment. No real organizations were targeted.**
 
 This project demonstrates competency in passive reconnaissance techniques applicable to **red team engagements**, **vulnerability assessments**, and **defensive exposure audits**.
 
 ---
 
-## 🖥️ Lab Environment
+## Lab Environment
 
 | Component | Details |
 |---|---|
@@ -59,7 +59,7 @@ This project demonstrates competency in passive reconnaissance techniques applic
 | **API Integrations** | Shodan, AbuseIPDB, VirusTotal, HaveIBeenPwned |
 | **Output Formats** | CSV, JSON, Graph Visualization |
 
-### 🔧 Setup & Installation
+### Setup & Installation
 
 ```bash
 # Clone the SpiderFoot repository
@@ -78,7 +78,7 @@ python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 
 ---
 
-## 📊 Scan Statistics
+## Scan Statistics
 
 | Metric | Value |
 |---|---|
@@ -91,7 +91,7 @@ python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 
 ---
 
-## 🔍 Methodology
+## Methodology
 
 The engagement followed a structured passive reconnaissance workflow across **four phases**:
 
@@ -109,7 +109,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-## 🧩 Modules Used
+## Modules Used
 
 47 modules were activated across 6 intelligence categories:
 
@@ -124,13 +124,13 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-## 🚨 Key Findings
+## Key Findings
 
 > Findings are classified by severity: `CRITICAL` `HIGH` `MEDIUM` `LOW` `INFO`
 
 ---
 
-### 🔴 HIGH — Email Addresses in Breach Databases
+### HIGH — Email Addresses in Breach Databases
 
 **Finding:** 4 corporate email addresses were identified in HaveIBeenPwned correlations, indicating potential credential exposure from third-party data breaches. Passwords may be reused across internal systems.
 
@@ -139,7 +139,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🔴 HIGH — Exposed Subdomain with Open Admin Panel
+### HIGH — Exposed Subdomain with Open Admin Panel
 
 **Finding:** `sfp_hackertarget` identified a subdomain (`admin.target-example.com`) with an accessible login panel responding on port 8080. Not listed in public DNS, but indexed via Certificate Transparency logs.
 
@@ -148,7 +148,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🟠 MEDIUM — Organisation IP Range Flagged on AbuseIPDB
+### MEDIUM — Organisation IP Range Flagged on AbuseIPDB
 
 **Finding:** Two IP addresses within the organisation's ASN netblock appeared in AbuseIPDB with reports of prior malicious activity, suggesting possible historical compromise or hosting abuse.
 
@@ -157,7 +157,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🟠 MEDIUM — SSL Certificate Expiry Detected
+### MEDIUM — SSL Certificate Expiry Detected
 
 **Finding:** `sfp_ssl` flagged a subdomain with an SSL certificate expiring within 14 days. Expired certificates trigger browser security warnings and indicate poor certificate lifecycle management.
 
@@ -166,7 +166,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🟠 MEDIUM — GitHub Repository Leaking Internal Config
+### MEDIUM — GitHub Repository Leaking Internal Config
 
 **Finding:** `sfp_github` identified a public repository belonging to an employee containing references to internal staging URLs and a partially redacted API key string.
 
@@ -175,7 +175,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🟡 LOW — 27 Subdomains via Certificate Transparency
+### LOW — 27 Subdomains via Certificate Transparency
 
 **Finding:** `sfp_crt.sh` returned 27 subdomains logged in public CT logs, including dev, staging, and legacy environments — significantly expanding the known attack surface.
 
@@ -184,7 +184,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🟡 LOW — Pastebin References to Organisation Name
+### LOW — Pastebin References to Organisation Name
 
 **Finding:** `sfp_pastebin` returned 3 paste entries referencing the organisation name. One entry included internal IP address ranges, likely from a prior employee.
 
@@ -193,7 +193,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### 🔵 INFO — Technology Stack Fingerprinted
+### INFO — Technology Stack Fingerprinted
 
 **Finding:** Server, `X-Powered-By`, and framework response headers revealed the full tech stack: **Apache 2.4 / PHP 8.1 / Laravel**. This information assists in targeting known CVEs during a full penetration test.
 
@@ -202,7 +202,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-## 🖼️ Evidence & Screenshots
+## Evidence & Screenshots
 
 > *Screenshots captured from the SpiderFoot Web UI and CLI during live lab execution.*
 
@@ -268,7 +268,7 @@ The graph visualization displayed node relationships between:
 
 ---
 
-## 🧠 Skills Demonstrated
+##Skills Demonstrated
 
 | Domain | Skills |
 |---|---|
@@ -281,20 +281,11 @@ The graph visualization displayed node relationships between:
 
 ---
 
-## 📁 Related Projects
 
-| Project | Description | Link |
-|---|---|---|
-| 🔬 Nessus Vulnerability Assessment | Credentialed scan lab — finding analysis and CVSS triage | [View →](../Vulnerability-Assessment) |
-| 🗺️ Network Topology Mapping | Lab infrastructure diagram using Canva + mock network design | Coming Soon |
-| 📄 CVE Analysis Reports | Mock CVE research write-ups with CVSS v3.1 scoring | Coming Soon |
-
----
-
-## ⚠️ Disclaimer
+## Disclaimer
 
 > This project was conducted in a **controlled, authorized lab environment** for educational and portfolio purposes only.  
-> No real organizations, systems, or individuals were targeted without explicit authorization.  
+> No real organisations, systems, or individuals were targeted without explicit authorization.  
 > All IP addresses, domain names, and email addresses shown are simulated or anonymized.
 
 ---
