@@ -8,7 +8,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
 
 > **Automated Open-Source Intelligence & Attack Surface Enumeration**  
-> A hands-on cybersecurity lab demonstrating passive reconnaissance, digital attack surface mapping, and threat intelligence correlation using SpiderFoot — all within an authorized lab environment.
+> A hands-on cybersecurity lab demonstrating passive reconnaissance, digital attack surface mapping and threat intelligence correlation using SpiderFoot all within an authorised lab environment.
 
 ---
 
@@ -29,9 +29,9 @@
 
 ## Objective
 
-The goal of this lab is to simulate the **OSINT reconnaissance phase** of an authorized penetration test or threat intelligence assessment.
+The goal of this lab is to simulate the **OSINT reconnaissance phase** of an authorised penetration test or threat intelligence assessment.
 
-Using SpiderFoot's automated scanning engine, I collected and correlated publicly available data about a simulated target organization, identifying:
+Using SpiderFoot's automated scanning engine, I collected and correlated publicly available data about a simulated target organisation, identifying:
 
 - Exposed subdomains and DNS records
 - Associated corporate email addresses
@@ -40,7 +40,7 @@ Using SpiderFoot's automated scanning engine, I collected and correlated publicl
 - GitHub/Pastebin data leaks
 - Technology stack fingerprinting
 
-> **All scans were performed in a controlled, authorized lab environment. No real organizations were targeted.**
+> **All scans were performed in a controlled, authorised lab environment. No real organizations were targeted.**
 
 This project demonstrates competency in passive reconnaissance techniques applicable to **red team engagements**, **vulnerability assessments**, and **defensive exposure audits**.
 
@@ -262,9 +262,9 @@ The graph visualization displayed node relationships between:
 | 🔴 Critical | R-01 | **Credential Reset** — Reset all breached email passwords immediately and enforce MFA across SSO and VPN systems |
 | 🔴 Critical | R-02 | **Restrict Admin Panel** — Place `admin.target-example.com` behind a VPN gateway or IP allowlist |
 | 🟠 High | R-03 | **SSL Certificate Management** — Implement auto-renewal (Let's Encrypt + Certbot) and certificate expiry alerting |
-| 🟠 High | R-04 | **GitHub Repository Audit** — Scan all employee public repos for secrets, API keys, and internal URLs using GitHub secret scanning |
+| 🟠 High | R-04 | **GitHub Repository Audit** — Scan all employee public repos for secrets, API keys and internal URLs using GitHub secret scanning |
 | 🟡 Medium | R-05 | **Attack Surface Reduction** — Decommission or restrict unused subdomains; implement DNS monitoring for subdomain takeover |
-| 🟡 Medium | R-06 | **HTTP Header Hardening** — Remove or sanitize `Server`, `X-Powered-By`, and framework version headers from all public-facing services |
+| 🟡 Medium | R-06 | **HTTP Header Hardening** — Remove or sanitize `Server`, `X-Powered-By` and framework version headers from all public-facing services |
 
 ---
 
@@ -285,7 +285,7 @@ The graph visualization displayed node relationships between:
 ## Disclaimer
 
 > This project was conducted in a **controlled, authorized lab environment** for educational and portfolio purposes only.  
-> No real organisations, systems, or individuals were targeted without explicit authorization.  
+> No real organisations, systems, or individuals were targeted without explicit authorisation.  
 > All IP addresses, domain names, and email addresses shown are simulated or anonymized.
 
 ---
