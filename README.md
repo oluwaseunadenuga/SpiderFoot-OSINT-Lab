@@ -82,7 +82,7 @@ python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 
 | Metric | Value |
 |---|---|
-| Total Modules Available | 200+ |
+| Total Modules Available | 654 |
 | Modules Activated | 47 |
 | Data Events Collected | 1,240 |
 | Notable Findings | 18 |
