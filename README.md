@@ -210,7 +210,11 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ## Evidence & Screenshots
 
-> *Screenshots captured from the SpiderFoot Web UI and CLI during live lab execution.*
+<img width="1843" height="793" alt="aa" src="https://github.com/user-attachments/assets/5fe23da1-0f81-49e4-839d-c0d2e8f030c7" />
+
+<img width="2546" height="1385" alt="ab" src="https://github.com/user-attachments/assets/bc84f782-3878-4901-8c28-4aefc2faf422" />
+
+<img width="2562" height="1432" alt="ac" src="https://github.com/user-attachments/assets/3daa2d6f-1638-4d8b-873f-578c743da604" />
 
 **Fig 1 — SpiderFoot Web UI: New Scan Configuration**
 
