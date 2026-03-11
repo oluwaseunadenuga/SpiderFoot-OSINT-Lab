@@ -8,6 +8,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
 
 > **Automated Open-Source Intelligence & Attack Surface Enumeration**  
+
 > A hands-on cybersecurity lab demonstrating passive reconnaissance, digital attack surface mapping and threat intelligence correlation using SpiderFoot all within an authorised lab environment.
 
 ---
@@ -61,6 +62,7 @@ This project demonstrates competency in passive reconnaissance techniques applic
 
 ### Setup & Installation
 ```
+
 bash
 # Clone the SpiderFoot repository
 git clone https://github.com/smicallef/spiderfoot.git
@@ -76,6 +78,7 @@ python3 sf.py -l 127.0.0.1:5001
 python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 
 ```
+
 <img width="1843" height="793" alt="aa" src="https://github.com/user-attachments/assets/5fe23da1-0f81-49e4-839d-c0d2e8f030c7" />
 ---
 ## Scan Statistics
@@ -135,6 +138,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** 4 corporate email addresses were identified in HaveIBeenPwned correlations, indicating potential credential exposure from third-party data breaches. Passwords may be reused across internal systems.
 
 **Module:** `sfp_haveibeenpwned`  
+
 **Risk:** Credential stuffing, unauthorized access  
 
 ---
@@ -262,7 +266,7 @@ The graph visualization displayed node relationships between:
 
 ---
 
-## ✅ Recommendations
+## Recommendations
 
 | Priority | ID | Recommendation |
 |---|---|---|
@@ -275,7 +279,7 @@ The graph visualization displayed node relationships between:
 
 ---
 
-##Skills Demonstrated
+## Skills Demonstrated
 
 | Domain | Skills |
 |---|---|
@@ -297,4 +301,4 @@ The graph visualization displayed node relationships between:
 
 ---
 
-*Portfolio project by Oluwaseun Adenuga| Cybersecurity Analyst | https://www.linkedin.com/in/oluwaseunadenuga/ | *
+Portfolio project by Oluwaseun Adenuga| Cybersecurity Analyst | https://www.linkedin.com/in/oluwaseunadenuga
