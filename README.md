@@ -231,9 +231,9 @@ SSL_CERT_EXPIRED        |    1  | MEDIUM
 LEAKSITE_CONTENT        |    3  | HIGH
 CREDENTIAL_COMPROMISED  |    4  | HIGH
 
+```
 <img width="2566" height="1368" alt="ae" src="https://github.com/user-attachments/assets/4f7b8a8a-f910-4ea1-ad2b-abf6fb04dc05" />
 
-```
 
 **Fig 3 — CLI Scan Output (Footprint Mode)**
 
