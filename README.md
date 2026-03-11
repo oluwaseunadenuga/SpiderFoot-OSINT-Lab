@@ -41,7 +41,7 @@ Using SpiderFoot's automated scanning engine, I collected and correlated publicl
 - GitHub/Pastebin data leaks
 - Technology stack fingerprinting
 
-> **All scans were performed in a controlled, authorised lab environment. No real organizations were targeted.**
+> **All scans were performed in a controlled, authorised lab environment. No real organisations were targeted.**
 
 This project demonstrates competency in passive reconnaissance techniques applicable to **red team engagements**, **vulnerability assessments**, and **defensive exposure audits**.
 
@@ -58,7 +58,7 @@ This project demonstrates competency in passive reconnaissance techniques applic
 | **Scan Modes** | Passive + Footprint |
 | **Target Types** | Domain, IP Range, Organisation Name |
 | **API Integrations** | Shodan, AbuseIPDB, VirusTotal, HaveIBeenPwned |
-| **Output Formats** | CSV, JSON, Graph Visualization |
+| **Output Formats** | CSV, JSON, Graph Visualisation |
 
 ### Setup & Installation
 ```
@@ -105,7 +105,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 | **01** | Target Seeding | Domain name, org name, ASN, IP ranges | `Passive` |
 | **02** | Footprinting | Subdomains, DNS records, WHOIS, SSL certs, email addresses | `Footprint` |
 | **03** | Threat Intel Correlation | Blacklist presence, breach data, malicious IP flags, dark web mentions | `Investigate` |
-| **04** | Analysis & Reporting | Graph visualization, correlation mapping, risk classification | All output formats |
+| **04** | Analysis & Reporting | Graph visualisation, correlation mapping, risk classification | All output formats |
 
 **Approach:**
 
@@ -281,12 +281,12 @@ The graph visualisation displayed node relationships between:
 
 | Priority | ID | Recommendation |
 |---|---|---|
-| 🔴 Critical | R-01 | **Credential Reset** — Reset all breached email passwords immediately and enforce MFA across SSO and VPN systems |
-| 🔴 Critical | R-02 | **Restrict Admin Panel** — Place `admin.target-example.com` behind a VPN gateway or IP allowlist |
-| 🟠 High | R-03 | **SSL Certificate Management** — Implement auto-renewal (Let's Encrypt + Certbot) and certificate expiry alerting |
-| 🟠 High | R-04 | **GitHub Repository Audit** — Scan all employee public repos for secrets, API keys and internal URLs using GitHub secret scanning |
-| 🟡 Medium | R-05 | **Attack Surface Reduction** — Decommission or restrict unused subdomains; implement DNS monitoring for subdomain takeover |
-| 🟡 Medium | R-06 | **HTTP Header Hardening** — Remove or sanitize `Server`, `X-Powered-By` and framework version headers from all public-facing services |
+| 🔴 Critical |R-01 | **Credential Reset** — Reset all breached email passwords immediately and enforce MFA across SSO and VPN systems |
+| 🔴 Critical |R-02 | **Restrict Admin Panel** — Place `admin.target-example.com` behind a VPN gateway or IP allowlist |
+| 🟠 High |R-03 | **SSL Certificate Management** — Implement auto-renewal (Let's Encrypt + Certbot) and certificate expiry alerting |
+| 🟠 High |R-04 | **GitHub Repository Audit** — Scan all employee public repos for secrets, API keys and internal URLs using GitHub secret scanning |
+| 🟡 Medium |R-05 | **Attack Surface Reduction** — Decommission or restrict unused subdomains; implement DNS monitoring for subdomain takeover |
+| 🟡 Medium |R-06 | **HTTP Header Hardening** — Remove or sanitize `Server`, `X-Powered-By` and framework version headers from all public-facing services |
 
 ---
 
