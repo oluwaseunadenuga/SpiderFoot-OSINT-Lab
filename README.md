@@ -136,7 +136,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### HIGH — Email Addresses in Breach Databases
+### HIGH - Email Addresses in Breach Databases
 
 **Finding:** 4 corporate email addresses were identified in HaveIBeenPwned correlations, indicating potential credential exposure from third-party data breaches. Passwords may be reused across internal systems.
 
@@ -146,7 +146,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### HIGH — Exposed Subdomain with Open Admin Panel
+### HIGH - Exposed Subdomain with Open Admin Panel
 
 **Finding:** `sfp_hackertarget` identified a subdomain (`admin.target-example.com`) with an accessible login panel responding on port 8080. Not listed in public DNS, but indexed via Certificate Transparency logs.
 
@@ -156,7 +156,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### MEDIUM — Organisation IP Range Flagged on AbuseIPDB
+### MEDIUM - Organisation IP Range Flagged on AbuseIPDB
 
 **Finding:** Two IP addresses within the organisation's ASN netblock appeared in AbuseIPDB with reports of prior malicious activity, suggesting possible historical compromise or hosting abuse.
 
@@ -165,7 +165,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### MEDIUM — SSL Certificate Expiry Detected
+### MEDIUM - SSL Certificate Expiry Detected
 
 **Finding:** `sfp_ssl` flagged a subdomain with an SSL certificate expiring within 14 days. Expired certificates trigger browser security warnings and indicate poor certificate lifecycle management.
 
@@ -175,7 +175,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### MEDIUM — GitHub Repository Leaking Internal Config
+### MEDIUM - GitHub Repository Leaking Internal Config
 
 **Finding:** `sfp_github` identified a public repository belonging to an employee containing references to internal staging URLs and a partially redacted API key string.
 
@@ -185,7 +185,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### LOW — 27 Subdomains via Certificate Transparency
+### LOW - 27 Subdomains via Certificate Transparency
 
 **Finding:** `sfp_crt.sh` returned 27 subdomains logged in public CT logs, including dev, staging, and legacy environments — significantly expanding the known attack surface.
 
@@ -195,7 +195,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### LOW — Pastebin References to Organisation Name
+### LOW - Pastebin References to Organisation Name
 
 **Finding:** `sfp_pastebin` returned 3 paste entries referencing the organisation name. One entry included internal IP address ranges, likely from a prior employee.
 
@@ -205,7 +205,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ---
 
-### INFO — Technology Stack Fingerprinted
+### INFO - Technology Stack Fingerprinted
 
 **Finding:** Server, `X-Powered-By`, and framework response headers revealed the full tech stack: **Apache 2.4 / PHP 8.1 / Laravel**. This information helps target known CVEs during a full penetration test.
 
@@ -219,7 +219,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 <img width="2546" height="1385" alt="ab" src="https://github.com/user-attachments/assets/bc84f782-3878-4901-8c28-4aefc2faf422" />
 
-**Fig 1 — SpiderFoot Web UI: New Scan Configuration**
+**Fig 1 - SpiderFoot Web UI: New Scan Configuration**
 
 ```
 [ New Scan ]
@@ -229,7 +229,7 @@ Mode:    Footprint
 Modules: 47 selected
 ```
 
-**Fig 2 — Scan Results Browse View (1,240 events)**
+**Fig 2 - Scan Results Browse View (1,240 events)**
 
 <img width="1703" height="1066" alt="Browse" src="https://github.com/user-attachments/assets/0f8dc0a4-95e7-4879-b789-23109e9534bd" />
 
@@ -248,7 +248,7 @@ CREDENTIAL_COMPROMISED  |    4  | HIGH
 <img width="2566" height="1368" alt="ae" src="https://github.com/user-attachments/assets/4f7b8a8a-f910-4ea1-ad2b-abf6fb04dc05" />
 
 
-**Fig 3 — CLI Scan Output (Footprint Mode)**
+**Fig 3 - CLI Scan Output (Footprint Mode)**
 
 ```bash
 
@@ -264,7 +264,7 @@ $ python3 sf.py -s target-example.com -u footprint
 [*]  Scan complete — 1,240 events recorded
 ```
 
-**Fig 4 — SpiderFoot Graph View**
+**Fig 4 - SpiderFoot Graph View**
 
 The graph visualisation displayed node relationships between:
 
