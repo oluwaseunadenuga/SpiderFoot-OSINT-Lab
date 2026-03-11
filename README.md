@@ -218,6 +218,8 @@ Modules: 47 selected
 
 **Fig 2 — Scan Results Browse View (1,240 events)**
 
+<img width="1703" height="1066" alt="Browse" src="https://github.com/user-attachments/assets/0f8dc0a4-95e7-4879-b789-23109e9534bd" />
+
 ```
 Event Type              | Count | Risk Level
 ------------------------|-------|------------
