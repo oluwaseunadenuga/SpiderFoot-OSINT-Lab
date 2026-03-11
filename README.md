@@ -74,6 +74,11 @@ python3 sf.py -l 127.0.0.1:5001
 
 # Alternative: CLI scan with footprint mode, JSON output
 python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
+
+<img width="1843" height="793" alt="image" src="https://github.com/user-attachments/assets/7ea865e0-09e3-4245-a6ab-5b6f4bc1d734" />
+
+<img width="2546" height="1385" alt="image" src="https://github.com/user-attachments/assets/89e33717-ee0b-461e-8708-0ab39e20b321" />
+
 ```
 
 ---
