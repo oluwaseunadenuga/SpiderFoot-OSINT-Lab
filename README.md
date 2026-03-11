@@ -80,7 +80,9 @@ python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 ```
 
 <img width="1843" height="793" alt="aa" src="https://github.com/user-attachments/assets/5fe23da1-0f81-49e4-839d-c0d2e8f030c7" />
+
 ---
+
 ## Scan Statistics
 
 | Metric | Value |
@@ -106,6 +108,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 | **04** | Analysis & Reporting | Graph visualization, correlation mapping, risk classification | All output formats |
 
 **Approach:**
+
 - **Passive mode** was used first to build a broad intelligence baseline without direct contact with target systems
 - **Footprint mode** was applied second to surface deeper technical infrastructure details
 - All findings were correlated across multiple data sources for accuracy before classification
@@ -148,6 +151,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** `sfp_hackertarget` identified a subdomain (`admin.target-example.com`) with an accessible login panel responding on port 8080. Not listed in public DNS, but indexed via Certificate Transparency logs.
 
 **Module:** `sfp_hackertarget`, `sfp_crt`  
+
 **Risk:** Brute-force attack surface, unauthorized admin access  
 
 ---
@@ -166,6 +170,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** `sfp_ssl` flagged a subdomain with an SSL certificate expiring within 14 days. Expired certificates trigger browser security warnings and indicate poor certificate lifecycle management.
 
 **Module:** `sfp_ssl`  
+
 **Risk:** Service disruption, loss of user trust  
 
 ---
@@ -175,6 +180,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** `sfp_github` identified a public repository belonging to an employee containing references to internal staging URLs and a partially redacted API key string.
 
 **Module:** `sfp_github`  
+
 **Risk:** Credential exposure, internal infrastructure disclosure  
 
 ---
@@ -184,6 +190,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** `sfp_crt.sh` returned 27 subdomains logged in public CT logs, including dev, staging, and legacy environments — significantly expanding the known attack surface.
 
 **Module:** `sfp_crt`  
+
 **Risk:** Expanded attack surface, subdomain takeover potential  
 
 ---
@@ -193,15 +200,17 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 **Finding:** `sfp_pastebin` returned 3 paste entries referencing the organisation name. One entry included internal IP address ranges, likely from a prior employee.
 
 **Module:** `sfp_pastebin`  
+
 **Risk:** Internal network topology disclosure  
 
 ---
 
 ### INFO — Technology Stack Fingerprinted
 
-**Finding:** Server, `X-Powered-By`, and framework response headers revealed the full tech stack: **Apache 2.4 / PHP 8.1 / Laravel**. This information assists in targeting known CVEs during a full penetration test.
+**Finding:** Server, `X-Powered-By`, and framework response headers revealed the full tech stack: **Apache 2.4 / PHP 8.1 / Laravel**. This information helps target known CVEs during a full penetration test.
 
 **Module:** `sfp_googlesearch`, HTTP header analysis  
+
 **Risk:** Targeted vulnerability exploitation in follow-on engagements  
 
 ---
@@ -242,6 +251,7 @@ CREDENTIAL_COMPROMISED  |    4  | HIGH
 **Fig 3 — CLI Scan Output (Footprint Mode)**
 
 ```bash
+
 $ python3 sf.py -s target-example.com -u footprint
 
 [*]  Starting scan on target-example.com
@@ -256,7 +266,8 @@ $ python3 sf.py -s target-example.com -u footprint
 
 **Fig 4 — SpiderFoot Graph View**
 
-The graph visualization displayed node relationships between:
+The graph visualisation displayed node relationships between:
+
 - **Root domain** → subdomains → IP addresses
 - **Email addresses** → breach database correlations
 - **IP ranges** → AbuseIPDB flags
@@ -295,9 +306,9 @@ The graph visualization displayed node relationships between:
 
 ## Disclaimer
 
-> This project was conducted in a **controlled, authorized lab environment** for educational and portfolio purposes only.  
-> No real organisations, systems, or individuals were targeted without explicit authorisation.  
-> All IP addresses, domain names, and email addresses shown are simulated or anonymized.
+> This project was conducted in a **controlled, authorised lab environment** for educational and portfolio purposes only.  
+> No real organisations, systems or individuals were targeted without explicit authorisation.  
+> All IP addresses, domain names and email addresses shown are simulated or anonymized.
 
 ---
 
