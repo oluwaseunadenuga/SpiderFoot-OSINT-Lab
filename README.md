@@ -204,11 +204,7 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 
 ## Evidence & Screenshots
 
-<img width="1843" height="793" alt="aa" src="https://github.com/user-attachments/assets/5fe23da1-0f81-49e4-839d-c0d2e8f030c7" />
-
 <img width="2546" height="1385" alt="ab" src="https://github.com/user-attachments/assets/bc84f782-3878-4901-8c28-4aefc2faf422" />
-
-<img width="2562" height="1432" alt="ac" src="https://github.com/user-attachments/assets/3daa2d6f-1638-4d8b-873f-578c743da604" />
 
 **Fig 1 — SpiderFoot Web UI: New Scan Configuration**
 
@@ -221,6 +217,8 @@ Modules: 47 selected
 ```
 
 **Fig 2 — Scan Results Browse View (1,240 events)**
+
+<img width="1703" height="1066" alt="Browse" src="https://github.com/user-attachments/assets/df8f72ac-5d63-47b1-9878-7319b006b138" />
 
 ```
 Event Type              | Count | Risk Level
@@ -250,6 +248,8 @@ $ python3 sf.py -s target-example.com -u footprint
 ```
 
 **Fig 4 — SpiderFoot Graph View**
+
+<img width="2546" height="1300" alt="Graph" src="https://github.com/user-attachments/assets/2a5f4129-61d1-4ff1-9538-242f2cd281db" />
 
 The graph visualization displayed node relationships between:
 - **Root domain** → subdomains → IP addresses
