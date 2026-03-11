@@ -218,8 +218,6 @@ Modules: 47 selected
 
 **Fig 2 — Scan Results Browse View (1,240 events)**
 
-<img width="1703" height="1066" alt="Browse" src="https://github.com/user-attachments/assets/df8f72ac-5d63-47b1-9878-7319b006b138" />
-
 ```
 Event Type              | Count | Risk Level
 ------------------------|-------|------------
@@ -230,6 +228,9 @@ BLACKLISTED_IP          |    2  | HIGH
 SSL_CERT_EXPIRED        |    1  | MEDIUM
 LEAKSITE_CONTENT        |    3  | HIGH
 CREDENTIAL_COMPROMISED  |    4  | HIGH
+
+<img width="2566" height="1368" alt="ae" src="https://github.com/user-attachments/assets/4f7b8a8a-f910-4ea1-ad2b-abf6fb04dc05" />
+
 ```
 
 **Fig 3 — CLI Scan Output (Footprint Mode)**
@@ -249,13 +250,13 @@ $ python3 sf.py -s target-example.com -u footprint
 
 **Fig 4 — SpiderFoot Graph View**
 
-<img width="2546" height="1300" alt="Graph" src="https://github.com/user-attachments/assets/2a5f4129-61d1-4ff1-9538-242f2cd281db" />
-
 The graph visualization displayed node relationships between:
 - **Root domain** → subdomains → IP addresses
 - **Email addresses** → breach database correlations
 - **IP ranges** → AbuseIPDB flags
 - **Employees** → GitHub repositories → config leaks
+
+<img width="2546" height="1300" alt="Graph" src="https://github.com/user-attachments/assets/2a5f4129-61d1-4ff1-9538-242f2cd281db" />
 
 ---
 
