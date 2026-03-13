@@ -286,7 +286,7 @@ The graph visualisation displayed node relationships between:
 | 🟠 High |R-03 | **SSL Certificate Management** — Implement auto-renewal (Let's Encrypt + Certbot) and certificate expiry alerting |
 | 🟠 High |R-04 | **GitHub Repository Audit** — Scan all employee public repos for secrets, API keys and internal URLs using GitHub secret scanning |
 | 🟡 Medium |R-05 | **Attack Surface Reduction** — Decommission or restrict unused subdomains; implement DNS monitoring for subdomain takeover |
-| 🟡 Medium |R-06 | **HTTP Header Hardening** — Remove or sanitize `Server`, `X-Powered-By` and framework version headers from all public-facing services |
+| 🟡 Medium |R-06 | **HTTP Header Hardening** — Remove or sanitise `Server`, `X-Powered-By` and framework version headers from all public-facing services |
 
 ---
 
