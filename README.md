@@ -83,6 +83,17 @@ python3 sf.py -s target-example.com -u footprint -o json > scan_results.json
 
 ---
 
+<img width="2546" height="1385" alt="ab" src="https://github.com/user-attachments/assets/bc84f782-3878-4901-8c28-4aefc2faf422" />
+
+**Fig 1 - SpiderFoot Web UI: New Scan Configuration**
+
+```
+[ New Scan ]
+Target:  target-example.com
+Type:    Domain Name
+Mode:    Footprint
+Modules: 47 selected
+```
 ## Scan Statistics
 
 | Metric | Value |
@@ -216,10 +227,6 @@ The engagement followed a structured passive reconnaissance workflow across **fo
 ---
 
 ## Evidence & Screenshots
-
-<img width="2546" height="1385" alt="ab" src="https://github.com/user-attachments/assets/bc84f782-3878-4901-8c28-4aefc2faf422" />
-
-**Fig 1 - SpiderFoot Web UI: New Scan Configuration**
 
 ```
 [ New Scan ]
